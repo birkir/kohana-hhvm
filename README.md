@@ -18,7 +18,7 @@ Run unit tests with php
 
 	...
 
-	Tests: 1170, Assertions: 2662, Errors: 4, Incomplete: 1, Skipped: 17.
+	Tests: 1170, Assertions: 2667, Incomplete: 1, Skipped: 17.
 
 
 Run unit tests with hhvm
@@ -34,19 +34,11 @@ Immediently ran into preg_replace /e modifier fatal so we replace it with preg_r
 
 Run the tests again and they run with seven failures.
 
-	Tests: 1170, Assertions: 2676, Failures: 7, Errors: 3, Incomplete: 1, Skipped: 5
+	Tests: 1170, Assertions: 2676, Failures: 7, Errors: 1, Incomplete: 1, Skipped: 5
 
 Errors
 
-	1. Kohana_TextTest::test_censor with data set #0 ('A donkey is also an ***', 'A donkey is also an ass', array('ass'), '*', true)
-
-		Undefined variable: replacement
-
-	2. Kohana_TextTest::test_censor with data set #1 ('Cake### isn\'t nearly as good as kohana###', 'CakePHP isn\'t nearly as good as kohanaphp', array('php'), '#', true)
-
-		Undefined variable: replacement
-
-	3. Kohana_Request_ClientTest::test_follows_with_headers
+	1. Kohana_Request_ClientTest::test_follows_with_headers
 
 		Undefined index: authorization
 

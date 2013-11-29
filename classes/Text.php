@@ -21,7 +21,13 @@ class Text extends Kohana_Text {
 
 		if (UTF8::strlen($replacement) == 1)
 		{
-			return preg_replace_callback($regex, function ($m) { return str_repeat($replacement, UTF8::strlen($m[1])); }, $str);
+			return preg_replace_callback(
+				$regex,
+				function ($m) use ($replacement) {
+					return str_repeat($replacement, UTF8::strlen($m[1]));
+				},
+				$str
+			);
 		}
 
 		return preg_replace($regex, $replacement, $str);
