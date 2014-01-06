@@ -2,6 +2,9 @@ PHP Version
 
 	PHP 5.5.5-1+debphp.org~precise+1 (cli) (built: Oct 21 2013 07:57:06)
 
+HipHop Version
+
+	HipHop VM v2.3.2 (rel)
 
 HipHop config
 
@@ -68,6 +71,8 @@ Fatals
 
 		Failed asserting that false is true.
 
-	7. Kohana_RouteTest::test_all_returns_all_defined_routes
+Pre 2.3 errors
+
+	1. Kohana_RouteTest::test_all_returns_all_defined_routes
 
 		Failed asserting that Array() is identical to an object of class "ReflectionProperty".
